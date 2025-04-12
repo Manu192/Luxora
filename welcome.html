@@ -12,7 +12,19 @@
       }
     </style>
   </head>
-  <body class="h-screen bg-cover bg-center relative" style="background-image: url('./images/audience-1853662_1280.jpg')">
+  <body class="h-screen  relative">
+    <!-- Background Video -->
+    <video 
+      autoplay 
+      muted 
+      loop 
+      playsinline
+      class="absolute inset-0 w-full h-full object-cover z-0"
+    >
+      <source src="./video/48569-454825064_large.mp4" type="video/mp4">
+      <!-- Fallback image if video doesn't load -->
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./images/audience-1853662_1280.jpg')"></div>
+    </video>
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
@@ -29,7 +41,7 @@
 
       <a 
         href="./home.html" 
-        class="mt-8 px-8 py-3 bg-yellow-400 text-black font-bold uppercase tracking-wider hover:bg-yellow-300 transition duration-300 transform hover:scale-105"
+        class="mt-8 px-8 py-3 bg-yellow-400 text-black font-bold uppercase tracking-wider hover:bg-yellow-300 transition duration-300 transform hover:scale-105 rounded-lg"
       >
         Join us
       </div>
