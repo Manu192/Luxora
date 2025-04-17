@@ -3,9 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUXORA Events</title>
+    <title>Luxora</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/cdb22e9e-3d92-490f-b4bd-d12f1880f932.png">
+    <link rel="stylesheet" href="./stylle.css">
+
+    <style>
+      body {
+        font-family: 'Cinzel', serif;
+      }
+      @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-down {
+      animation: fadeInDown 1s ease-out backwards;
+    }
+
+
+
+
+    </style>
+    
 </head>
 <body>
-    <h1>demo</h1>
+    <nav class="absolute top-0 left-0 right-0 z-20 p-6 flex justify-between items-center space-x-8 bg-black">
+        <div class="text-2xl font-bold text-yellow-400">LUXORA</div>
+        <!-- We can redirect to all the next upcoming pages from here -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-yellow-500 hover:text-yellow-300">Home</a>
+          <a href="#events" class="text-yellow-500 hover:text-yellow-300">Events</a>
+          <a href="#contact" class="text-yellow-500 hover:text-yellow-300">Contact</a>
+          <a href="#Booking" class="text-yellow-500 hover:text-yellow-300"> Booking</a>
+          <a href="#Login" class="text-yellow-900 hover:text-yellow-100">  <button class="bg-yellow-500 border rounded px-1">Login</button></a>
+          <a href="#Register" class="text-yellow-900 hover:text-yellow-100"> <button class="bg-yellow-500 border rounded px-1">Resgister</button></a>
+
+        </div>
+      </nav>
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./images/audience-1853662_1280.jpg')"></div>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <section class="relative z-10 flex items-center justify-center min-h-screen">
+        <div class="text-center px-4 max-w-4xl">
+          <!-- Main heading with pop-in animation -->
+          <h1 class="text-4xl md:text-6xl font-bold text-yellow-500 mb-6 fade-in-down">
+            EXCLUSIVE EXPERIENCES
+          </h1>
+          
+          <!-- Subheading with delayed animation -->
+          <p class="text-xl text-white mb-8 mx-auto max-w-2xl
+                      fade-in-down">
+            Elevate your nights with Luxora's curated luxury events and unforgettable moments.
+          </p>
+  </section>
+          <!-- About -->
+    
+    <section class="about">
+      <div class="about-content">
+        <h2>About Luxora</h2>
+        <div class="about-flex">
+          <div class="about-text">
+            <p>
+              Luxora is your gateway to premium nightlife and unforgettable luxury events.
+              We specialize in curating elite gatherings that blend music, ambiance, and sophistication.
+            </p>
+            <p>
+              Our mission is to elevate your nights through exclusive access, exceptional service,
+              and unforgettable memories. Join us and step into a realm where every detail is designed for excellence.
+            </p>
+          </div>
+          <div class="about-images">
+            <img src="./images/istockphoto-1177485677-612x612.jpg" alt="Luxury Event" class="fade-in-left">
+            <img src="./images/istockphoto-1186961785-612x612.jpg" alt="VIP Experience" class="fade-in-right">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-100 py-12 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-yellow-700 mb-8">Our Gallery</h2>
+        
+        <!-- Image Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Image 1 -->
+          <div class="group relative overflow-hidden rounded-lg aspect-square">
+            <img 
+              src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" 
+              alt="Event photo 1" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-medium">Party</span>
+            </div>
+          </div>
+          
+          <!-- Image 2 -->
+          <div class="group relative overflow-hidden rounded-lg aspect-square">
+            <img 
+              src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678" 
+              alt="Event photo 2" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-medium">Workshops</span>
+            </div>
+          </div>
+          
+          <!-- Image 3 -->
+          <div class="group relative overflow-hidden rounded-lg aspect-square">
+            <img 
+              src="./images/international-conference-1597531_1280.jpg" 
+              alt="Event photo 3" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-medium">Confrence</span>
+            </div>
+          </div>
+          
+          <!-- Image 4 -->
+          <div class="group relative overflow-hidden rounded-lg aspect-square">
+            <img 
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" 
+              alt="Event photo 4" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-medium">Keynote</span>
+            </div>
+          </div>
+          
+          <!-- Image 5 -->
+          <div class="group relative overflow-hidden rounded-lg aspect-square">
+            <img 
+              src="https://images.unsplash.com/photo-1511578314322-379afb476865" 
+              alt="Event photo 5" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-medium">Exhibition</span>
+            </div>
+          </div>
+          
+          <!-- Image 6 -->
+          <div class="group relative overflow-hidden rounded-lg aspect-square">
+            <img 
+              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f" 
+              alt="Event photo 6" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-medium">Concerts</span>
+            </div>
+          </div>
+          
+          <!-- Image 7 -->
+          <div class="group relative overflow-hidden rounded-lg aspect-square">
+            <img 
+              src="./images/wedding-1846114_1280.jpg" 
+              alt="Event photo 7" 
+              class="w-full h-full object-cover transition-transform duration-100 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
+              <span class="text-white font-medium">Wedding Ceremony</span>
+            </div>
+          </div>
+          
+          <!-- Image 8 -->
+          <div class="group relative overflow-hidden rounded-lg aspect-square">
+            <img 
+              src="./images/istockphoto-479977238-612x612.jpg" 
+              alt="Event photo 8" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
+              <span class="text-white font-medium">Receptions</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- View More Button -->
+        <div class="text-center mt-10">
+          <button class="bg-yellow-700 hover:bg-yellow-800 text-white font-medium py-3 px-8 rounded-md transition-colors duration-200 shadow-md hover:shadow-lg">
+            View More Photos
+          </button>
+        </div> 
+      </div>
+    </section>
+
+    <section class="bg-gray-100 mt-7 py-7 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h1 class="text-center text-yellow-700 text-4xl font-bold mb-8">Upcoming Events</h1>
+        
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Event Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                  alt="Conference event" 
+                  class="w-full h-full object-cover"
+                >
+              </div>
+              <div class="p-6">
+                <div class="text-yellow-600 font-semibold mb-2">June 15, 2025</div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Annual Conference</h3>
+                <p class="text-gray-600 mb-4">Join us for our biggest event of the year featuring industry leaders and networking opportunities.</p>
+                <a href="#" class="text-yellow-700 font-medium hover:underline flex items-center">
+                  Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Event Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="h-48 overflow-hidden">
+                <img 
+                  src="./images/15303db09e01eef47d93232e29248d7e.jpg" 
+                  alt="Workshop event" 
+                  class="w-full h-full object-cover"
+                >
+              </div>
+              <div class="p-6">
+                <div class="text-yellow-600 font-semibold mb-2">September 22, 2025</div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Workshop Series</h3>
+                <p class="text-gray-600 mb-4">Hands-on workshops to improve your skills with expert guidance and practical exercises.</p>
+                <a href="#" class="text-yellow-700 font-medium hover:underline flex items-center">
+                  Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Event Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="h-48 overflow-hidden">
+                <img 
+                  src="./images/event-party-3005668_1280.jpg" 
+                  alt="Networking event" 
+                  class="w-full h-full object-cover"
+                >
+              </div>
+              <div class="p-6">
+                <div class="text-yellow-600 font-semibold mb-2">August 5, 2025</div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Party Mixer</h3>
+                <p class="text-gray-600 mb-4">Casual evening event to refresh your soul.</p>
+                <a href="#" class="text-yellow-700 font-medium hover:underline flex items-center">
+                  Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-10">
+            <a href="#" class="inline-block bg-yellow-700 text-white px-6 py-3 rounded-md font-medium hover:bg-yellow-800 transition-colors duration-300 shadow-md hover:shadow-lg">
+              View All Events
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
